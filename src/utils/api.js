@@ -12,7 +12,9 @@ const api = axios.create({
 //获取WordPress文章列表
 export const fetchPosts = async () => {
     try {
-        const response = await api.get('/posts');
+        const response = await api.get('/posts?_embed');
+      
+        console.log(response.json)
         return response.data;
     } catch (error) {
         console.error('Error fetching posts:', error);

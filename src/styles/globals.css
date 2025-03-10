@@ -1,3 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content img {
+  margin-top: 20px; /* 调整图片顶部间距 */
+  margin-bottom: 20px; /* 调整图片底部间距 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content p {
+  line-height: 1.8; /* 调整段落行距 */
+  margin-bottom: 1.5rem; /* 增加段落之间的间距 */
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  margin-top: 2rem; /* 增加标题顶部间距 */
+  margin-bottom: 1rem; /* 增加标题底部间距 */
+}
+
+.content ul, .content ol {
+  margin-left: 1.5rem; /* 增加列表左边距 */
+}
+
+.content blockquote {
+  border-left: 4px solid #ddd; /* 增加引用左边框 */
+  padding-left: 1rem; /* 增加引用左边距 */
+  color: #555; /* 调整引用文字颜色 */
+  font-style: italic; /* 调整引用文字样式 */
+}
+/* 
 html, body {
   margin: 0;
   padding: 0;
@@ -22,4 +54,4 @@ ul {
 
 button {
   cursor: pointer;
-}
+} */
