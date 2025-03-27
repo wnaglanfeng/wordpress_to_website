@@ -85,7 +85,8 @@ const Post = ({ post, featuredImage, error }) => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 pt-20">
+      
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col">
           {/* Banner */}
@@ -94,14 +95,6 @@ const Post = ({ post, featuredImage, error }) => {
               src={featuredImage}
               alt="Article Banner"
               className="absolute top-0 left-0 w-full h-full object-cover"
-            />
-          </div>
-          
-          <div className="w-full aspect-[175/58] mb-8 rounded-xl overflow-hidden">
-            <img
-              src={featuredImage}
-              alt="Article Banner"
-              className="w-full object-cover"
             />
           </div>
           {/* 文章内容 */}
