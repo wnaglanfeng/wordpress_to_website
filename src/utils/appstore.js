@@ -34,4 +34,4 @@ export const search = async (market, region, keyword, page, pagesize, sp) => {
     }
 };
 
-export default appstore_api;
+export default search;
