@@ -10,7 +10,7 @@ const appstore_api = axios.create({
 });
 
 //搜索应用，输入market: ios，region: CHN，keyword: 快手，page: 1，pagesize: 5，sp: diandian
-export const search = async (market, region, keyword, page, pagesize, sp) => {
+const search = async (market, region, keyword, page, pagesize, sp) => {
     try {
         
         const response = await appstore_api.get('/api/appstore/search', {
@@ -26,7 +26,7 @@ export const search = async (market, region, keyword, page, pagesize, sp) => {
 
         // const response = await api.get('/api/appstore/search');
       
-        console.log(response.json)
+        // console.log(response.json)
         return response.data;
     } catch (error) {
         console.error('Error fetching posts:', error);
