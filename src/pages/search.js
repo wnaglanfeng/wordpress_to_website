@@ -3,20 +3,14 @@
 import React, { useState } from 'react';
 import { search } from '../../utils/appstore.js';
 
-interface SearchOption {
-  id: number;
-  name: string;
-  icon: string;
-}
+const SearchApp = () => {
+  const [selectedCountry, setSelectedCountry] = useState(1);
+  const [selectedStore, setSelectedStore] = useState(1);
+  const [searchText, setSearchText] = useState('');
+  const [showCountryDropdown, setShowCountryDropdown] = useState(false);
+  const [showStoreDropdown, setShowStoreDropdown] = useState(false);
 
-const  SearchApp = () => {
-  const [selectedCountry, setSelectedCountry] = useState<number>(1);
-  const [selectedStore, setSelectedStore] = useState<number>(1);
-  const [searchText, setSearchText] = useState<string>('');
-  const [showCountryDropdown, setShowCountryDropdown] = useState<boolean>(false);
-  const [showStoreDropdown, setShowStoreDropdown] = useState<boolean>(false);
-
-  const countries: SearchOption[] = [
+  const countries = [
     { id: 1, name: '中国', icon: 'fa-flag-china' },
     { id: 2, name: '美国', icon: 'fa-flag-usa' },
     { id: 3, name: '日本', icon: 'fa-flag-japan' },
@@ -24,7 +18,7 @@ const  SearchApp = () => {
     { id: 5, name: '英国', icon: 'fa-flag-uk' },
   ];
 
-  const stores: SearchOption[] = [
+  const stores = [
     { id: 1, name: 'App Store', icon: 'fa-apple' },
     { id: 2, name: 'Google Play', icon: 'fa-google-play' },
     { id: 3, name: '华为应用市场', icon: 'fa-mobile-screen' },
