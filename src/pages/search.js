@@ -9,7 +9,7 @@ interface SearchOption {
   icon: string;
 }
 
-const App: React.FC = () => {
+const  SearchApp = () => {
   const [selectedCountry, setSelectedCountry] = useState<number>(1);
   const [selectedStore, setSelectedStore] = useState<number>(1);
   const [searchText, setSearchText] = useState<string>('');
@@ -199,5 +199,5 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default SearchApp;
 
