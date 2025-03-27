@@ -20,7 +20,7 @@ const useIsMobile = () => {
     }, []);
     return isMobile;
 };
-const App: React.FC = () => {
+const AsoPage = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isMobile = useIsMobile();
@@ -335,4 +335,4 @@ const App: React.FC = () => {
         </div>
     );
 };
-export default App
+export default AsoPage
